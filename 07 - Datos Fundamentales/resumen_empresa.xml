@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportSnapshot Major="1" Minor="0" Revision="1">
+	<CoIDs>
+		<CoID Type="RepNo">A13EF</CoID>
+		<CoID Type="CompanyName">Amazon.com Inc</CoID>
+		<CoID Type="IRSNo">911646860</CoID>
+		<CoID Type="CIKNo">0001018724</CoID>
+		<CoID Type="OrganizationPermID">4295905494</CoID>
+	</CoIDs>
+	<Issues>
+		<Issue ID="1" Type="C" Desc="Common Stock" Order="1">
+			<IssueID Type="Name">Ordinary Shares</IssueID>
+			<IssueID Type="Ticker">AMZN</IssueID>
+			<IssueID Type="RIC">AMZN.O</IssueID>
+			<IssueID Type="DisplayRIC">AMZN.OQ</IssueID>
+			<IssueID Type="InstrumentPI">362465</IssueID>
+			<IssueID Type="QuotePI">7656829</IssueID>
+			<IssueID Type="InstrumentPermID">8590928320</IssueID>
+			<IssueID Type="QuotePermID">55835314022</IssueID>
+			<Exchange Code="NASD" Country="USA">NASDAQ</Exchange>
+			<GlobalListingType>OSR</GlobalListingType>
+			<MostRecentSplit Date="2022-06-06">20.0</MostRecentSplit>
+		</Issue>
+	</Issues>
+	<CoGeneralInfo>
+		<CoStatus Code="1">Active</CoStatus>
+		<CoType Code="EQU">Equity Issue</CoType>
+		<LastModified>2024-11-01</LastModified>
+		<LatestAvailableAnnual>2023-12-31</LatestAvailableAnnual>
+		<LatestAvailableInterim>2024-09-30</LatestAvailableInterim>
+		<Employees LastUpdated="2024-09-30">1551000</Employees>
+		<SharesOut Date="2024-10-18" TotalFloat="9448998763.0">10515011008.0</SharesOut>
+		<ReportingCurrency Code="USD">U.S. Dollars</ReportingCurrency>
+		<MostRecentExchange Date="2024-12-03">1.0</MostRecentExchange>
+	</CoGeneralInfo>
+	<TextInfo>
+		<Text Type="Business Summary" lastModified="2024-02-06T04:57:38">Amazon.com, Inc. provides a range of products and services to customers. The products offered through its stores include merchandise and content it has purchased for resale and products offered by third-party sellers. The Companys segments include North America, International and Amazon Web Services (AWS). It serves consumers through its online and physical stores and focuses on selection, price, and convenience. Customers access its offerings through its Websites, mobile apps, Alexa, devices, streaming, and physically visiting its stores. It manufactures and sells electronic devices, including Kindle, Fire tablet, Fire TV, Echo, Ring, Blink, and eero, and it develops and produces media content. It serves developers and enterprises of all sizes, including start-ups, government agencies, and academic institutions, through AWS, which offers a broad set of on-demand technology services, including compute, storage, database, analytics, and machine learning, and other services.</Text>
+		<Text Type="Financial Summary" lastModified="2024-11-01T12:02:36"> BRIEF: For the nine months ended 30 September 2024, Amazon.com Inc revenues increased 11% to $450.17B. Net income increased 98% to $39.24B. Revenues reflect Amazon Web Services segment increase of 18% to $78.77B, Third Party Seller Services segment increase of 13% to $108.66B, North America segment increase of 10% to $271.91B, Amazon Web Services segment increase of 18% to $78.77B, Retail Sales, Total increase of 5% to $15.64B, Online Sales.</Text>
+	</TextInfo>
+	<contactInfo lastUpdated="2024-12-03T19:20:51">
+		<streetAddress line="1">410 Terry Ave N</streetAddress>
+		<streetAddress line="2"></streetAddress>
+		<streetAddress line="3"></streetAddress>
+		<city>SEATTLE</city>
+		<state-region>WA</state-region>
+		<postalCode>98109-5210</postalCode>
+		<country code="USA">United States</country>
+		<contactName></contactName>
+		<contactTitle></contactTitle>
+		<phone>
+			<phone type="mainphone">
+				<countryPhoneCode>1</countryPhoneCode>
+				<city-areacode>206</city-areacode>
+				<number>2661000</number>
+			</phone>
+			<phone type="mainfax">
+				<countryPhoneCode>1</countryPhoneCode>
+				<city-areacode>302</city-areacode>
+				<number>6365454</number>
+			</phone>
+		</phone>
+	</contactInfo>
+	<webLinks lastUpdated="2021-02-23T17:05:12"><webSite mainCategory="Home Page">https://www.amazon.com/</webSite><eMail mainCategory="Company Contact/E-mail">amazon-ir@amazon.com</eMail></webLinks>
+	<peerInfo lastUpdated="2024-12-03T19:20:51">
+		<IndustryInfo>
+			<Industry type="TRBC" order="1" reported="0" code="5340201013" mnem="">Internet &amp; Mail Order Department Stores</Industry>
+			<Industry type="NAICS" order="1" reported="0" code="459999" mnem="">All Other Miscellaneous Retailers</Industry>
+			<Industry type="SIC" order="0" reported="1" code="5961" mnem="">Catalog And Mail-Order Houses</Industry>
+			<Industry type="SIC" order="1" reported="0" code="5999" mnem="">Misc Retail Stores, Nec</Industry>
+		</IndustryInfo>
+		<Indexconstituet>S&amp;P 500</Indexconstituet>
+		<Indexconstituet>Dow Industry</Indexconstituet>
+	</peerInfo>
+	<officers>
+		<officer rank="1" since="1994">
+			<firstName>Jeffrey</firstName>
+			<mI>P.</mI>
+			<lastName>Bezos</lastName>
+			<age>60 </age>
+			<title startYear="2021" startMonth="07" startDay="05" iD1="CHM" abbr1="Chmn." iD2="FDR" abbr2="Fndr.">Executive Chairman of the Board, Founder</title>
+		</officer>
+		<officer rank="2" since="04/2006">
+			<firstName>Andrew</firstName>
+			<mI>R.</mI>
+			<lastName>Jassy</lastName>
+			<age>56 </age>
+			<title startYear="2021" startMonth="07" startDay="05" iD1="PRE" abbr1="Pres." iD2="CEO" abbr2="CEO">President, Chief Executive Officer, Director</title>
+		</officer>
+		<officer rank="3" since="06/2015">
+			<firstName>Brian</firstName>
+			<mI>T.</mI>
+			<lastName>Olsavsky</lastName>
+			<age>60 </age>
+			<title startYear="2015" startMonth="06" startDay="" iD1="CFO" abbr1="CFO" iD2="SVP" abbr2="Sr. VP">Senior Vice President, Chief Financial Officer</title>
+		</officer>
+		<officer rank="4" since="07/2022">
+			<firstName>Douglas</firstName>
+			<mI>J.</mI>
+			<lastName>Herrington</lastName>
+			<age>57 </age>
+			<title startYear="2022" startMonth="07" startDay="" iD1="CEX" abbr1="Corp. Exec." iD2="" abbr2="">Chief Executive Officer - Worldwide Amazon Stores</title>
+		</officer>
+		<officer rank="5" since="09/2012">
+			<firstName>David</firstName>
+			<mI>A.</mI>
+			<lastName>Zapolsky</lastName>
+			<age>60 </age>
+			<title startYear="2023" startMonth="05" startDay="" iD1="SVP" abbr1="Sr. VP" iD2="GCN" abbr2="Counsel">Senior Vice President - Global Public Policy, General Counsel</title>
+		</officer>
+		<officer rank="6" since="03/21/2007">
+			<firstName>Shelley</firstName>
+			<mI>L.</mI>
+			<lastName>Reynolds</lastName>
+			<age>59 </age>
+			<title startYear="2007" startMonth="04" startDay="" iD1="VPR" abbr1="VP" iD2="CAO" abbr2="CAO">Vice President, Worldwide Controller, Principal Accounting Officer</title>
+		</officer>
+	</officers>
+	<Ratios PriceCurrency="USD" ReportingCurrency="USD" ExchangeRate="1.00000" LatestAvailableDate="2024-09-30">
+		<Group ID="Price and Volume">
+			<Ratio FieldName="NPRICE" Type="N">213.44000</Ratio>
+			<Ratio FieldName="NHIG" Type="N">215.90000</Ratio>
+			<Ratio FieldName="NLOW" Type="N">143.13000</Ratio>
+			<Ratio FieldName="PDATE" Type="D">2024-12-03T00:00:00</Ratio>
+			<Ratio FieldName="VOL10DAVG" Type="N">36.13492</Ratio>
+			<Ratio FieldName="EV" Type="N">2235131.00000</Ratio>
+		</Group>
+		<Group ID="Income Statement">
+			<Ratio FieldName="MKTCAP" Type="N">2244324.00000</Ratio>
+			<Ratio FieldName="TTMREV" Type="N">620128.00000</Ratio>
+			<Ratio FieldName="TTMEBITD" Type="N">111583.00000</Ratio>
+			<Ratio FieldName="TTMNIAC" Type="N">49868.00000</Ratio>
+		</Group>
+		<Group ID="Per share data">
+			<Ratio FieldName="TTMEPSXCLX" Type="N">4.66592</Ratio>
+			<Ratio FieldName="TTMREVPS" Type="N">58.05762</Ratio>
+			<Ratio FieldName="QBVPS" Type="N">24.65522</Ratio>
+			<Ratio FieldName="QCSHPS" Type="N">8.37703</Ratio>
+			<Ratio FieldName="TTMCFSHR" Type="N">9.44955</Ratio>
+			<Ratio FieldName="TTMDIVSHR" Type="N">0.00000</Ratio>
+		</Group>
+		<Group ID="Other Ratios">
+			<Ratio FieldName="TTMGROSMGN" Type="N">48.40614</Ratio>
+			<Ratio FieldName="TTMROEPCT" Type="N">22.55838</Ratio>
+			<Ratio FieldName="TTMPR2REV" Type="N">3.61913</Ratio>
+			<Ratio FieldName="PEEXCLXOR" Type="N">45.74446</Ratio>
+			<Ratio FieldName="PRICE2BK" Type="N">8.65699</Ratio>
+			<Ratio FieldName="Employees" Type="N">1551000</Ratio>
+		</Group>
+	</Ratios>
+	<ForecastData ConsensusType="Mean" CurFiscalYear="2024" CurFiscalYearEndMonth="12" CurInterimEndCalYear="2024" CurInterimEndMonth="6" EarningsBasis="PRX">
+		<Ratio FieldName="ConsRecom" Type="N">
+			<Value PeriodType="CURR">1.6842</Value>
+		</Ratio>
+		<Ratio FieldName="TargetPrice" Type="N">
+			<Value PeriodType="CURR">225.67310</Value>
+		</Ratio>
+		<Ratio FieldName="ProjLTGrowthRate" Type="N">
+			<Value PeriodType="CURR">32.9000</Value>
+		</Ratio>
+		<Ratio FieldName="ProjPE" Type="N">
+			<Value PeriodType="CURR">45.60684</Value>
+		</Ratio>
+		<Ratio FieldName="ProjSales" Type="N">
+			<Value PeriodType="CURR">637825.75750</Value>
+		</Ratio>
+		<Ratio FieldName="ProjSalesQ" Type="N">
+			<Value PeriodType="CURR">148465.11860</Value>
+		</Ratio>
+		<Ratio FieldName="ProjEPS" Type="N">
+			<Value PeriodType="CURR">4.68000</Value>
+		</Ratio>
+		<Ratio FieldName="ProjEPSQ" Type="N">
+			<Value PeriodType="CURR">1.01870</Value>
+		</Ratio>
+		<Ratio FieldName="ProjProfit" Type="N">
+			<Value PeriodType="CURR">50855.70140</Value>
+		</Ratio>
+		<Ratio FieldName="ProjDPS" Type="N">
+			<Value PeriodType="CURR">0.00000</Value>
+		</Ratio>
+	</ForecastData>
+</ReportSnapshot>

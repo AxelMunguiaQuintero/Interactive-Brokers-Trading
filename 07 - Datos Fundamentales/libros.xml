@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<libros>
+   
+   
+   <libro id="1">
+      
+      
+      <titulo>Cien años de soledad</titulo>
+      
+      
+      <autor>Gabriel García Márquez</autor>
+      
+      
+      <año>1969</año>
+      
+   
+   </libro>
+   
+   
+   <libro id="2">
+      
+      
+      <titulo>El túnel</titulo>
+      
+      
+      <autor>Ernesto Sabato</autor>
+      
+      
+      <año>1948</año>
+      
+   
+   </libro>
+   
+
+   <libro id="3">
+      <titulo>El nombre del viento</titulo>
+      <autor>Patrick Rothfuss</autor>
+      <año>2007</año>
+   </libro>
+</libros>

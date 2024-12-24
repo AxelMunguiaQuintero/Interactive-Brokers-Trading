@@ -1,0 +1,24 @@
+Cliente: 100: Error
+ID de la solicitud: -1
+Código del error: 2104, Mensaje: La conexión al centro de datos funciona correctamente:usfarm.nj
+
+Cliente: 100: Error
+ID de la solicitud: -1
+Código del error: 2104, Mensaje: La conexión al centro de datos funciona correctamente:usfuture
+
+Cliente: 100: Error
+ID de la solicitud: -1
+Código del error: 2104, Mensaje: La conexión al centro de datos funciona correctamente:cashfarm
+
+Cliente: 100: Error
+ID de la solicitud: -1
+Código del error: 2104, Mensaje: La conexión al centro de datos funciona correctamente:usfarm
+
+Cliente: 100: Error
+ID de la solicitud: -1
+Código del error: 2106, Mensaje: La conexión al centro de datos HMDS funciona correctamente:ushmds
+
+Cliente: 100: Error
+ID de la solicitud: -1
+Código del error: 2158, Mensaje: La conexión de la granja de datos "sec-def" funciona correctamente:secdefil
+
