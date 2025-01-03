@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Clase Libro
 class Libro:
     

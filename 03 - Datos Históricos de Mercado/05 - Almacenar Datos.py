@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Importar librerías
 import sqlite3
 import threading

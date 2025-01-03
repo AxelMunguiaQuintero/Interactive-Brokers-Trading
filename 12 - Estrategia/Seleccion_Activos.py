@@ -19,7 +19,7 @@ class IV_Options(IB_Trading):
         """
         
         # Inicializar a IB_Trading
-        IB_Trading.__init__(self, errors_verbose = False)
+        IB_Trading.__init__(self, errors_verbose=True)
         # Definir Atributos
         self.ticker = ticker
         self.vencimiento = vencimiento
@@ -27,14 +27,14 @@ class IV_Options(IB_Trading):
         self.evento = threading.Event()
         
     
-    def tickOptionComputation(self, reqId, tickType, tickAttrib, impliedVol, delta, optPrice, pvDividend,
-                              gamma, vega, theta, undPrice):
+    def tickOptionComputation(self, reqId, tickType, tickAttrib, impliedVol, delta, optPrice, 
+                              pvDividend, gamma, vega, theta, undPrice):
         
         """
         Este método se ejecuta cada vez que se recibe información de una opción específica, incluyendo
         la volatilidad implícita calculada.
         """
-    
+        
         # Agregar Petición
         if reqId not in self.volatilidad_implicita:
             self.volatilidad_implicita[reqId] = {"Activo": True, "Valor": ""}
@@ -48,15 +48,15 @@ class IV_Options(IB_Trading):
             # Establecer Evento
             self.evento.set()
             
-        
+            
     def obtener_volatilidades_implicitas(self):
         
         """
-        Este método obtiene todos los contratos de opciones disponibles para el activo y vencimiento especificado.
+        Este método obtiene todos los contratos de opciones disponibles para el activo y el vencimiento especificado.
         Realiza peticiones de volatilidades implícitas para las opciones 'Call' y 'Put' en diferentes strikes
         y guarda los resultados en un diccionario para su posterior uso.
         """
-    
+        
         # Crear Contrato
         contrato = Contract()
         contrato.symbol = self.ticker
@@ -74,45 +74,46 @@ class IV_Options(IB_Trading):
         # Obtener Strikes
         contratos_opcion = np.array(contratos_opcion)[indices_random]
         strikes = sorted([contrato_detalles.contract.strike for contrato_detalles in contratos_opcion])
-        # Realizar Peticiones de Volatilidades Implícitas (Calls)
+        # Realizar Peticiones de Volatilidades Implicitas (Calls)
         self.reqMarketDataType(marketDataType=3)
         for n, strike in enumerate(strikes):
             # Call
             contrato.right = "C"
             contrato.strike = strikes[n]
             contrato.exchange = "SMART"
-            self.reqMktData(reqId=int(2 * n), contract=contrato, genericTickList="", snapshot=False, 
-                            regulatorySnapshot=False, mktDataOptions=[])
+            self.reqMktData(reqId=int(2 * n), contract=contrato, genericTickList="", 
+                            snapshot=False, regulatorySnapshot=False, mktDataOptions=[])
             self.evento.wait()
             self.evento.clear()
         # Realizar Peticiones de Volatilidades Implícitas (Puts)
-        self.reqMarketDataType(marketDataType=3)
         for n, strike in enumerate(strikes):
             # Put
             contrato.right = "P"
             contrato.strike = strikes[n]
             contrato.exchange = "SMART"
-            self.reqMktData(reqId=int(2 * n + 1), contract=contrato, genericTickList="106", snapshot=False, 
-                            regulatorySnapshot=False, mktDataOptions=[])
+            self.reqMktData(reqId=int(2 * n + 1), contract=contrato, genericTickList="", 
+                            snapshot=False, regulatorySnapshot=False, mktDataOptions=[])
             self.evento.wait()
             self.evento.clear()
             
-        # Guardar Strikes utilizados
+        # Guardaar Strikes Utilizado
         self.strikes = strikes
-
+        
         return self.volatilidad_implicita
     
     
 # Crear Instancia y Conectarse
-IB_vol_impl = IV_Options(ticker="AAPL", vencimiento="20260116")
-IB_vol_impl.connect(host="127.0.0.1", port=7497, clientId=1)
+IB_Vol_Impl = IV_Options(ticker="AAPL", vencimiento="20260116")
+IB_Vol_Impl.connect(host="127.0.0.1", port=7497, clientId=1)
 # Realizar Petición
-volatilidades_implicitas = IB_vol_impl.obtener_volatilidades_implicitas()
-calls_iv = [volatilidades_implicitas[0]["Valor"], volatilidades_implicitas[2]["Valor"], volatilidades_implicitas[4]["Valor"], 
-            volatilidades_implicitas[6]["Valor"], volatilidades_implicitas[8]["Valor"], volatilidades_implicitas[10]["Valor"]]  
-puts_iv = [volatilidades_implicitas[1]["Valor"], volatilidades_implicitas[3]["Valor"], volatilidades_implicitas[5]["Valor"], 
-            volatilidades_implicitas[7]["Valor"], volatilidades_implicitas[9]["Valor"], volatilidades_implicitas[11]["Valor"]]  
-strikes = IB_vol_impl.strikes
+volatilidades_implicitas = IB_Vol_Impl.obtener_volatilidades_implicitas()
+
+calls_iv = [volatilidades_implicitas[0]["Valor"], volatilidades_implicitas[2]["Valor"], volatilidades_implicitas[4]["Valor"],
+            volatilidades_implicitas[6]["Valor"], volatilidades_implicitas[8]["Valor"], volatilidades_implicitas[10]["Valor"]]         
+puts_iv = [volatilidades_implicitas[1]["Valor"], volatilidades_implicitas[3]["Valor"], volatilidades_implicitas[5]["Valor"],
+           volatilidades_implicitas[7]["Valor"], volatilidades_implicitas[9]["Valor"], volatilidades_implicitas[11]["Valor"]]
+strikes = IB_Vol_Impl.strikes
+
 # Graficar
 fig, axes = plt.subplots(ncols=2, nrows=1, figsize=(22, 10))
 
@@ -132,16 +133,13 @@ axes[1].set_ylabel("Volatilidad Implícita", fontsize=14, weight="bold")
 axes[1].grid(True, linestyle="--", alpha=0.7)
 axes[1].legend()
 
-# Ajustar el espacio entre subgráficos
 plt.tight_layout()
-
-# Mostrar el gráfico
 plt.show()
-
+        
 # Recordatorio:
-#   - El volatility skew es una representación gráfica que muestra cómo varía la volatilidad implícita de las opciones según su
-#     precio de ejercicio (strike).
-#   - Las opciones cuyo strike está fuera del dinero o en posiciones más alejadas del precio actual del activo subyacente tienden
-#     a tener una volatilidad implícita menor. Esto se traduce en un menor costo inicial para el comprador de la opción. Si un
-#     trader espera que el precio del activo subyacente se mueva de manera significativa, comprar opciones con menor volatilidad
-#     implícita puede ser una estrategia más rentable, ya que estas opciones son más baratas en términos de prima.
+#   - El Volatility Skew es una representación gráfica que muestra cómo varía la volatilidad implícita de las opciones según 
+#     su precio de ejercicio.
+#   - Las Opciones cuyo strike está fuera del dinero o en posiciones más alejadas del precio actual del activo subyacente tienden
+#     a tener una volatilidad implícitaa menor. Esto se traduce en un menor costo inicial para el comprador de la opción. Si un trader
+#     espera que el precio del activo subyacente se mueva de manera significativa, comprar opciones con menor volatilidad implícita
+#     puede ser una estrategia más rentable, ya que estas opciones son más baratas en términos de prima.

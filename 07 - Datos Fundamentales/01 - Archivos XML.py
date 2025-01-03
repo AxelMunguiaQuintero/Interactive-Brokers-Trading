@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Importar librerías
 import xml.etree.ElementTree as ET
 import xml.dom.minidom
