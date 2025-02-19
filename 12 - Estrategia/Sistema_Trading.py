@@ -178,7 +178,7 @@ def Sistema_Trading() -> IB_Trading:
     # Abrir Operaciones (Iterar en Lose)
     for indice, posicion_individual in perdida_df.iterrows():
         # Generar Orden
-        orden_mercado = IB_app.market_order(action="SELL", totalQuantity=1)
+        orden_mercado = IB_app.market_order(action="BUY", totalQuantity=1)
         # Siguiente Id válido
         next_id = IB_app.reqIds(numIds=-1)
         IB_app.placeOrder(orderId=next_id, contract=posicion_individual["Contrato Opt"], order=orden_mercado)
