@@ -111,7 +111,7 @@ time.sleep(3)
 detalles_contrato = IB_conexion.reqContractDetails(reqId=0, contract=IB_conexion.ordenes[0])
 time.sleep(1)
 id_contrato = IB_conexion.contrato_detalles.contract.conId
-IB_conexion.reqPnLSingle(reqId=1, account="DU5375084", modelCode="", conid=id_contrato)
+IB_conexion.reqPnLSingle(reqId=1, account="No. Cuenta", modelCode="", conid=id_contrato)
 
 # Esperar antes de cancelar suscripción
 time.sleep(10)

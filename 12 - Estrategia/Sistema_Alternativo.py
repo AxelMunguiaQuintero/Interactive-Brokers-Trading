@@ -124,7 +124,7 @@ while True:
         tiempo_dormir = (hora_cierre_menos_un_minuto - hora_ny).total_seconds()
         time.sleep(tiempo_dormir)
         # Cerrar Todo
-        IB_app.end_session(account="DUE273425", close_orders=True, close_positions=True)
+        IB_app.end_session(account="No. Cuenta", close_orders=True, close_positions=True)
         # Terminar Bucle
         break
     else:

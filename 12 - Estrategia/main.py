@@ -43,5 +43,5 @@ if __name__ == "__main__":
         diferencia = hora_final - datetime.now(zona_horaria_ny)
         time.sleep(diferencia.seconds + 1)
         # Cerrar todo 
-        IB_app.end_session(account="DUE273425", close_orders=True, close_positions=True)
+        IB_app.end_session(account="No. Cuenta", close_orders=True, close_positions=True)
         

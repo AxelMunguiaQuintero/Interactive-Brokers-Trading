@@ -153,7 +153,7 @@ class IB_ReporteGeneral(EClient, EWrapper):
         
         
 # Conexión
-IB_app = IB_ReporteGeneral(account="DUE273425")
+IB_app = IB_ReporteGeneral(account="No. Cuenta")
 IB_app.connect(host="127.0.0.1", port=7497, clientId=1)
 threading.Thread(target=IB_app.run).start()
 IB_app.evento.wait()

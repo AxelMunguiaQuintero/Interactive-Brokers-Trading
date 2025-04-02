@@ -53,7 +53,7 @@ api_thread.start()
 time.sleep(2)
         
 # Realizar Petición
-IB_conexion.reqPnL(reqId=1, account="DUE273425", modelCode="")
+IB_conexion.reqPnL(reqId=1, account="No. Cuenta", modelCode="")
 time.sleep(3)
 # Detener la actualización de la solicitud de las ganancias o pérdidas
 IB_conexion.cancelPnL(reqId=1)     
